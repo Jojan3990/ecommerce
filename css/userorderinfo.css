@@ -1,0 +1,5 @@
+.small-container .cart-info img:hover{
+    opacity: 70%;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}

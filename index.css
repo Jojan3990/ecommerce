@@ -1,0 +1,353 @@
+
+/* ----wrapper online or not-------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+}
+body{
+  /* width: 100%;
+  min-height: 100vh; */
+  font-family: 'Poppins', sans-serif;
+}
+/* body{
+  overflow: hidden;
+  background: #f2f2f2;
+} */
+.wrapper{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: show_toast 1s ease forwards;
+  /* z-index: 10; */
+}
+@keyframes show_toast {
+  0%{
+    transform: translateX(-100%);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    transform: translateX(20px);
+  }
+}
+.wrapper.hide{
+  /* animation: hide_toast 1s ease forwards; */
+}
+@keyframes hide_toast {
+  0%{
+    transform: translateX(20px);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+  }
+}
+.wrapper .toast{
+  background: #fff;
+  padding: 10px 5px 10px 10px;
+  border-radius: 10px;
+  border-left: 5px solid #2ecc71;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .toast.offline{
+  border-color: #ccc;
+}
+.toast .content{
+  display: flex;
+  align-items: center;
+}
+.content .icon{
+  font-size: 25px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+.toast.offline .content .icon{
+  background: #ccc;
+}
+.content .details{
+  margin-left: 15px;
+}
+.details span{
+  font-size: 14px;
+  font-weight: 500;
+}
+.details p{
+  color: #878787;
+}
+.toast .close-icon{
+  color: #878787;
+  font-size: 23px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  transition: all 0.3s ease;
+}
+.close-icon:hover{
+  background: #efefef;
+}
+
+/* ---cart making--------------- */
+
+li a.cart{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+li a.cart:hover {
+    text-decoration: none;
+    opacity: 70%;
+  }
+  
+li a.cart .cart-basket {
+    font-size: .6rem;
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    background-color: #418deb;
+    border-radius: 50%;
+  }
+
+
+
+
+/* ---------top-front-info----------- */
+.top-index-info{
+    /* max-width: 90%; */
+    padding-top: 1.3em;
+    background: rgb(234,234,235);
+    background: linear-gradient(90deg, rgba(234,234,235,1) 8%, rgba(70,69,105,1) 100%);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+.top-index-info .sec{
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 545px){
+    .top-index-info{
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 756px){
+    .top-index-info{
+        display: none;
+    }
+    .nav-contain{
+        padding-top: 4rem;
+    }
+}
+
+
+/* ------profile pic------------ */
+.cirpro{
+    /* border-radius: 50%; */
+    margin-right: 1rem;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+}
+/* ---------navbar---------- */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+}
+nav{
+    flex: 1;
+    text-align: right ;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+a:hover{
+    color:#7400b8;
+}
+p{
+    /* color: #555; */
+}
+.nav-contain{
+    font-size: 1.1em;
+    max-width: 80%;
+    margin: auto;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* --------media query for menu ---------- */
+@media only screen and (max-width: 991px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100% ;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        background-color: white;
+        margin-top: 4rem;
+    }
+    nav ul li{
+        /* display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px; */
+    }
+    nav ul li a{
+        /* color: #fff; */
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* ------------navbar end --------- */
+
+
+
+
+/* ---------footer --------  */
+.footer{
+    padding-top: 5rem;
+}
+.footer .footer-up {
+    /* padding-top: 2rem; */
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: #6c757d;
+
+}
+.footer .footer-up .info img{
+  margin-bottom: 0.8rem;
+}
+.footer .footer-up .info b{
+    padding-left: 3.7rem;
+    color: #14213d;
+}
+
+.footer .footer-up .fo i {
+    margin-right: 10px;
+}
+
+.footer .footer-up b {
+    font-size: 20px;
+    color: black;
+}
+.footer .footer-up p {
+    font-size: 15px;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+.footer .footer-up .info{
+    padding-top: 2rem;    
+}
+
+.footer .footer-up .contact-us i {
+    font-size: 1.8rem;
+}
+.footer .footer-up .links .fa-facebook{
+  color: #418deb;
+}
+.footer .footer-up .links .fa-facebook:hover {
+    opacity: 80%;
+    cursor: pointer;
+    color: blue;
+}
+.footer .footer-up .links .fa-instagram{
+  color: palevioletred;
+}
+.footer .footer-up .links .fa-youtube{
+  color: red;
+}
+.footer .footer-up .links .fa-instagram:hover {
+    opacity: 85%;
+    cursor: pointer;
+    color: red;
+}
+
+.footer .footer-up .links .fa-youtube:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:840px) {
+    .footer .footer-up {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 5rem;
+    }
+}
+
+@media only screen and (max-width:694px) {
+    .footer .footer-up {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 5rem;
+    }
+    .footer .footer-up .fo{
+      margin-top: 4rem;
+      /* padding-top: 4rem; */
+    }
+
+    /* .footer .footer-up .info,
+    .about-us,
+    .links {
+        margin-top: 1.2rem;
+    } */
+}
+
+.footer .footer-down {
+    background-color: #14213d;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer .maps{
+  background-image: url('./images/maps.png');
+  background-attachment:fixed;
+  height:30rem;
+  width: 100%;
+}
+
+/* ------------footer end ---------  */

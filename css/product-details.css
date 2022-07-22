@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.fl img{
+  position: absolute;
+  top: 40%;
+}
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #000;
+} */
+.container-fa{
+  position: relative;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: left;
+}
+/* .container-fa .post{
+  display: none;
+} */
+/* .container-fa .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+} */
+/* .container-fa .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+} */
+/* .container-fa .edit:hover{
+  text-decoration: underline;
+} */
+.rating label{
+  font-size: 25px;
+  color: #444;
+  padding-top: 1rem;
+  transition: all 0.2s ease;
+  color: gold;
+}
+.container-fa .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+.container-fa input:not(:checked) ~ label:hover,
+.container-fa input:not(:checked) ~ label:hover ~ label{
+  color: gold
+}
+.container-fa input:checked ~ label{
+  color: gold;
+}
+/* .container-fa input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+} */
+/* #rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+} */
+/* .container-fa form{
+  display: none;
+}
+.container-fa input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.container-fa .textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover{
+  background: #1b1b1b;
+} */
+.col-two .img-cen{
+  display: flex;
+  justify-content: center;
+}
+.lef-margin{
+  margin-left: 6rem;
+}
+
+/* .comment-section----  */
+.fa-clipboard-check{
+  color: green;
+  margin-left: 0.4rem;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+.small-container .row .col-two .col-two-test input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

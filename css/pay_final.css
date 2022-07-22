@@ -1,0 +1,12 @@
+.container{
+    margin-bottom: 20rem;
+}
+img{
+    transition: 0.25s ease-in-out;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.imge{
+    margin-left: 2rem;
+}

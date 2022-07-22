@@ -1,0 +1,257 @@
+/* --------for top site background---------------- */
+main .bodyMain{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding: 3rem;
+}
+main .forpadding{
+    padding-top: 1rem;
+}
+main .site-title-main{
+    background-size: cover;
+    animation: Animate 60s ease-in-out infinite;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title-main .site-background-forMain{
+    padding-top:14rem ;
+    text-align: center;
+    color: white;
+}
+main .site-title-main h1,h3{
+    margin: .3rem;  /* This will specify top left right and bottom margin */
+}
+main .site-title-main h1{
+    color: white;
+}
+@media only screen and (max-width:959px){
+    main .site-title-main h3{
+        font-size: 1.5rem;
+    }
+    main .site-title-main h1{
+        font-size: 1.4rem;
+    }
+}
+main .btn{
+    margin: 1.8rem;
+    background-color:#ee6c4d;
+}
+
+main .site-title-main .btn:hover{
+    background: transparent;
+    border:1px solid white;
+    color: white;
+}
+/* --------for top site background end---------------- */
+@keyframes Animate{
+    0%,100%{
+        background-image: url('../assets/backimg3.jpg');
+    }
+}
+@media only screen and (max-width:959px){
+    main .bodyMain{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* ---------for blog 1--------------- */
+main .blog1 a{
+    color: crimson;
+}
+main .blog1{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+}
+main .blog1 .pic{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/studyPic/study3.jpg');
+    height: 37vh;
+}
+main .blog1 .con{
+    padding-left: 2rem;
+}
+/* -----------blog 1 end--------------- */
+/* -----------for blog 2 ------------------ */
+main .blog2 a{
+    color: crimson;
+}
+main .blog2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .blog2 .pic1{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/studyPic/study4.jpg');
+    height: 37vh;
+}
+main .blog2 .con{
+    padding-left: 2rem;
+}
+/* ----------------blog 2 end---------------- */
+/* ----------------for blog 3--------------- */
+main .blog3 a{
+    color: crimson;
+}
+main .blog3 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .blog3 .pic2{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/studyPic/study5.jpg');
+    height: 37vh;
+}
+main .blog3 .con{
+    padding-left: 2rem;
+    
+}
+/* ---------blog 3 end--------------- */
+/* ------------for blog 4------------- */
+main .blog4 a{
+    color: crimson;
+}
+main .blog4{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .blog4 .pic3{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/studyPic/study6.jpg');
+    height: 37vh;
+}
+main .blog4 .con{
+    padding-left: 2rem;   
+}
+/* -------------blog 4 end----------- */
+/* --------------for blog 5---------------- */
+main .blog5 a{
+    color: crimson;
+}
+main .blog5{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .blog5 .pic4{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/studyPic/study7.jpg');
+    height: 37vh;
+}
+main .blog5 .con{
+    padding-left: 2rem;   
+}
+/* --------------blog5 end--------------- */
+/* ----------for blog 6----------- */
+main .blog6 a{
+    color: crimson;
+}
+main .blog6{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .blog6 .pic5{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/studyPic/study8.jpg');
+    height: 37vh;
+}
+main .blog6 .con{
+    padding-left: 2rem;   
+}
+/* --------blog 6 end------------------ */
+
+/* ---------blog 7--------- */
+
+main .blog7 a{
+    color: crimson;
+}
+main .blog7{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .blog7 .pic6{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/studyPic/study9.jpg');
+    height: 37vh;
+}
+main .blog7 .con{
+    padding-left: 2rem;
+}
+
+/* ---------blog 7 end---------- */
+
+/* ---------blog 7--------- */
+
+main .blog8 a{
+    color: crimson;
+}
+main .blog8{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .blog8 .pic8{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/People/Newari/1.jpg');
+    height: 37vh;
+}
+main .blog8 .con{
+    padding-left: 2rem;
+}
+
+/* ---------blog 7 end---------- */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px){
+    main .blog1{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    main .blog2{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    main .blog3{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    main .blog4{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    main .blog5{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    main .blog6{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    main .blog7{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    main .blog8{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

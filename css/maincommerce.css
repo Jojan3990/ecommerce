@@ -1,0 +1,291 @@
+main{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+    background: rgb(234,234,235);
+    background: linear-gradient(90deg, rgba(234,234,235,1) 8%, rgba(104,103,132,1) 81%, rgba(70,69,105,1) 100%);
+}
+.contain{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+/* gg edit */
+
+.gg-edit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.gg-edit-up p{
+}
+.img-side{
+    background-image: url('../images/side.png');
+    height: 500px;
+    background-size: contain;
+}
+@media only screen and (max-width:1204px){
+    .gg-edit{
+        grid-template-columns: 40% 60%;
+    }
+}
+@media only screen and (max-width:1005px){
+    .gg-edit{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gg-edit-down{
+        display: none;
+    }
+    .gg-edit-up{
+        background-image: url('../images/side.png');
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .gg-edit-up p{
+        /* color: #240046; */
+        font-weight: 600;
+    }
+}
+
+/* end gg edit  */
+
+
+/* --------owl carousel-------------  */
+/* ----------for owl carosuel--------- */
+
+/* main .blogcare{ //This is if you want background image for owl carosuel
+    background: url('../assets/owl.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+} */
+/* main .blogcare .blog-post{
+    padding-top: 4rem;
+} */
+
+/* main .blogcare .blog-post .contentcare{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0px 5px 10px black;
+}
+main .contentcare .blog-title{
+    padding: 1.5rem 0rem; 
+}
+main .blogcare .btn:hover{
+    background: transparent;
+    border:1px solid black;
+    color: black;
+}
+main .blogcare .containercare{
+    margin: 0 5vw;
+} */
+
+/* ----------for owl carosuel end--------- */
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* .col-two{
+    flex-basis: 50%;
+    min-width: 300px;
+} */
+.col-two{
+    max-width: 100%;
+    padding: 50px 50px;
+}
+.col-two h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    padding-top: 6rem;
+}
+
+/* ------------features categories--------- */
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-three{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 3px 5px black;
+
+}
+.col-three img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* ------------features categories--------- */
+
+/* -----featured product------ */
+.title{
+    margin:  0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #7400b8;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-four{
+    flex-basis: 25%; 
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.col-four img{
+    width: 100%;
+}
+h5{
+    margin-top: 0.5rem;
+    color: #555;
+    font-weight: normal;
+}
+.col-four p{ 
+    font-size: 14px;
+}
+.rating .fa-solid{
+    color: #7400b8;
+}
+.col-four:hover{
+    transform: translateY(-5px);
+}
+/* -----featured product end ------ */
+
+/* --------offer ------------ */
+
+.offer{
+    background: rgb(234,234,235);
+    background: linear-gradient(90deg, rgba(234,234,235,1) 8%, rgba(104,103,132,1) 81%, rgba(70,69,105,1) 100%);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.oo-edit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.oo-edit-down p{
+    font-weight: 600;
+}
+.img-oo-side{
+    /* background-image: url('../images/Studio_Project.png');
+    height: 60px;
+    width: 100%; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+}
+@media only screen and (max-width:988px){
+    .oo-edit{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .oo-edit-up{
+        display: none;
+    }
+    .oo-edit-down{
+        /* background-image: url('../images/product/exclusive.png');
+        background-position: center;
+        background-size: cover; */
+        /* background-attachment: fixed; */
+    }
+    .gg-edit-up p{
+        /* color: #240046; */
+        font-weight: 600;
+    }
+}
+
+/*---------------- offer end -------------- */
+
+/* --------testimonial---------  */
+
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-three{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.testimonial .col-three img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-three:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 27px;
+    color: #7400b8;;
+}
+.col-three p{
+    font-size: 15px;
+    margin: 12px 0;
+    color: #777;;
+}
+.testimonial .col-three h3{
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+/* --------testimonial ------------- */
+
+/* -------brands---------- */
+
+.brands{
+    margin: 100px auto;
+}
+.col-five{
+    width: 160px;
+}
+.col-five img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%); /* this makes img grayscale */
+}
+.col-five img:hover{
+    filter: grayscale(0); /* makes hovering effect gray 0 and original color when hovered */
+}
+
+/* --------brands-------- */
+
+/* -----media for less than 600 screen size */
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-two, .col-three, .col-four{
+        flex-basis: 100%;
+    }
+}

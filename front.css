@@ -1,0 +1,536 @@
+
+/* info top  */
+
+.container .info-top {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+@media only screen and (max-width:767px) {
+    .container .info-top {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+/* info top end  */
+
+/* ------info-front-top */
+.container .info-front-top{
+    padding-bottom: 1.5rem;
+}
+.container .info-front-top b{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+@media only screen and (max-width:1199px) {
+    .container .info-front-top b{
+        font-size: 2.8rem;
+    }
+}
+@media only screen and (max-width:991px) {
+    .container .info-front-top b{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:767px) {
+    .container .info-front-top b{
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (max-width:419px) {
+    .container .info-front-top b{
+        font-size: 1.3rem;
+    }
+}
+
+
+/* making uniq  */
+
+.uniq {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #14213d;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+.uniq:hover {
+    /* transform: scale(1.1); */
+}
+
+.uniq b {
+    font-size: 2rem;
+}
+
+.uniq p {
+    font-size: 1rem;
+    /* color: #888; */
+}
+
+/* .container.uniq.found,
+.empl {
+    padding-right: 8rem;
+    border-right: 5px solid red;
+    transition: 5s ease-in;
+} */
+
+
+.uniq div{
+    font-size:0.9em;
+    padding-right: 1rem;
+    padding-left: 3rem;
+    border-right: 5px solid red;
+    transition: 1s ease;
+    margin-right:2em;
+}
+
+.uniq div:hover{
+    font-size:0.7em;
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 75%;
+}
+
+/* .container .uniq .empl:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.container .uniq .found:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.container .uniq .com-proj:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 75%;
+} */
+
+@media only screen and (max-width:1399px) {
+    .uniq {
+        padding: 1rem;
+    }
+
+    .uniq .empl,
+    .com-proj {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width:514px) {
+    .uniq {
+        display: grid;
+        transform: scale(1);
+    }
+    .uniq .com-proj{
+        border-right: 0px;
+    }
+    .uniq .empl,.com-proj {
+        margin-left: 0rem;
+        border-bottom: 5px solid red;
+        border-right: 0px;
+    }
+
+    .uniq .found {
+        border-right: 0px;
+        border-bottom: 5px solid red;
+    }
+
+    .uniq b {
+        font-size: 2rem;
+    }
+
+    .uniq p {
+        font-size: 0.9rem;
+    }
+}
+
+/* making uniq end  */
+
+
+/* making mid info card project */
+.container .info-card-project p{
+    color: #555;
+}
+.container .info-card-project {
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.container .info-card-project .pro:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:1400px) {
+    .container .info-card-project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container .info-card-project .pro1 {
+        margin-left: 3rem;
+    }
+
+    .container .info-card-project .pro {
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .container .info-card-project {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (max-width:390px) {
+    .container .info-card-project{
+        margin-left: -2rem;
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:323px) {
+    .container .info-card-project{
+        margin-left: -3rem;
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:307px) {
+    .container .info-card-project{
+        margin-left: -4rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* making mid info card project end */
+
+
+/* info-mid-intro manage */
+
+.container .info-mid-intro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container .info-mid-intro-left {
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width:991px) {
+    .container .info-mid-intro {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container .info-mid-intro-left {
+        margin-right: 0rem;
+    }
+}
+
+/* info-mid-intro end   */
+
+
+/* set-info  */
+
+.container .set-info {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/* .container .set-info b {
+    font-size: 1.2rem;
+    font-weight: 750;
+} */
+.container .set-info p{
+    font-size: 1rem;
+    margin: 0.8rem;
+    color: #555;
+}
+
+@media only screen and (max-width:767px) {
+    .container .set-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:499px) {
+    .container .set-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* set info end  */
+
+
+/* ------some-proj---------  */
+
+.container .some-proj {
+    background-color: #264653;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+    margin-bottom: 3rem;
+}
+.container .some-proj p{
+    color: #555;
+}
+@media only screen and (max-width:1199px) {
+
+    .container .some-proj .some-pro1,
+    .some-pro2 {
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width:870px) {
+    .container .some-proj {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container .some-proj .some-pro1 {
+        padding-bottom: 2rem;
+    }
+
+    .container .some-proj .some-pro2 {
+        padding-right: 0rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .container .some-proj {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container .some-proj .some-pro2 {
+        padding-bottom: 2rem;
+    }
+}
+
+/* -------some pro end --------  */
+
+/* ------hot products-------  */
+
+.container .hot-products {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.container .hot-products b {
+    font-size: 1.6rem;
+}
+
+.container .hot-products .hot {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.container .hot-products .hot .hot1 img {
+    margin: 1.5rem;
+}
+
+.container .hot-products .hot .hot2 img {
+    margin: 1.5rem;
+}
+
+/* .container .hot-products .hot img:hover{
+    cursor: pointer;
+    opacity: 60%;
+    transition: 0.6s;
+    transform: scale(1.1);
+} */
+@media only screen and (max-width:920px) {
+    .container .hot-products .hot .hot1 img {
+        height: 250px;
+    }
+    .container .hot-products .hot .hot2 img {
+        height: 250px;
+    }
+}
+@media only screen and (max-width:778px) {
+    .container .hot-products .hot .hot1 img {
+        height: 200px;
+    }
+    .container .hot-products .hot .hot2 img {
+        height: 200px;
+    }
+}
+@media only screen and (max-width:660px) {
+    .container .hot-products .hot .hot1 img {
+        height: 150px;
+    }
+    .container .hot-products .hot .hot2 img {
+        height: 150px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .container .hot-products .hot .hot1 img {
+        height: 130px;
+        margin: 1rem;
+    }
+    .container .hot-products .hot .hot2 img {
+        height: 130px;
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width:427px) {
+    .container .hot-products .hot .hot1 img {
+        height: 110px;
+    }
+    .container .hot-products .hot .hot2 img {
+        height: 110px;
+    }
+}
+@media only screen and (max-width:369px) {
+    .container .hot-products .hot .hot1 img {
+        height: 100px;
+    }
+    .container .hot-products .hot .hot2 img {
+        height: 100px;
+    }
+}
+@media only screen and (max-width:347px) {
+    .container .hot-products .hot .hot1 img {
+        height: 80px;
+    }
+    .container .hot-products .hot .hot2 img {
+        height: 80px;
+    }
+}
+.container .hot-products .hot .hot_image h1{
+    position: absolute;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    /* background: #ee6c4d; */
+    background: #7400b8;
+    color: white;
+    border-radius: 5px;
+}
+.container .hot-products .hot .hot_image h2{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 70px;
+    font-size: 4rem;
+    color: #14213d;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.30s ease-in-out;
+}
+.container .hot-products .hot .hot_image:hover h2{
+    opacity: 1;
+    transform: scale(1.1);
+}
+@media only screen and (max-width:427px) {
+    .container .hot-products .hot .hot_image h1{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:920px) {
+    .container .hot-products .hot .hot_image h2{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width:778px) {
+    .container .hot-products .hot .hot_image h2{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:660px) {
+    .container .hot-products .hot .hot_image h2{
+        font-size: 1.6rem;
+        margin-top: 6rem;
+        margin-left: 3.5rem;
+    }
+}
+@media only screen and (max-width:500px) {
+    .container .hot-products .hot .hot_image h2{
+        font-size: 1.6rem;
+        margin-left: 2.6rem;
+    }
+}
+@media only screen and (max-width:427px) {
+    .container .hot-products .hot .hot_image h2{
+        font-size: 1.3rem;
+        margin-top: 4.5rem;
+        margin-left: 2.2rem;
+    }
+}
+@media only screen and (max-width:369px) {
+    .container{
+        
+    }
+}
+/* ----hot products end -------- */
+
+
+
+/* --------dynamic text--------- */
+.container .info-front-top .dynamic{
+    display: flex;
+}
+.dynamic-txts{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 65px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: #343F4F; */
+    background: white;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+  @media only screen and (max-width:1399px) {
+    .container .info-front-top .dynamic .dynamic-txts{
+        display: grid;
+        display: none;
+    }
+}
+

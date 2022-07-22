@@ -1,0 +1,510 @@
+main{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+}
+
+.header{
+    background: rgb(234,234,235);
+    background: linear-gradient(90deg, rgba(234,234,235,1) 8%, rgba(104,103,132,1) 81%, rgba(70,69,105,1) 100%);
+}
+.contain{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+
+
+/* gg edit */
+
+.gg-edit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.gg-edit-up p{
+    color: #240046;
+    font-weight: 600;
+}
+.img-side{
+    background-image: url('../images/side.png');
+    height: 500px;
+    background-size: contain;
+}
+@media only screen and (max-width:1204px){
+    .gg-edit{
+        grid-template-columns: 40% 60%;
+    }
+}
+@media only screen and (max-width:1005px){
+    .gg-edit{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gg-edit-down{
+        display: none;
+    }
+    .gg-edit-up{
+        background-image: url('../images/side.png');
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .gg-edit-up p{
+        color: #240046;
+        font-weight: 600;
+    }
+}
+
+/* end gg edit  */
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-two{
+    flex-basis: 50%;
+    max-width: 100%;
+    padding: 50px 50px;
+}
+.col-two h2{
+    /* font-size: 50px; */
+    line-height: 30px;
+    margin: 25px 0;
+    padding-top: 6rem;
+}
+.col-two .pa-man{
+    /* color: #7400b8; */
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+/* ------------features categories--------- */
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-three{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-three img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+.bor{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.small-container .ra-sep .off{
+    color: gray;
+}
+/* ------------features categories--------- */
+
+/* -----featured product------ */
+
+.title{
+    margin:  0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #7400b8;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-four{
+    flex-basis: 25%; 
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.col-four img{
+    width: 100%;
+}
+h5{
+    margin-top: 0.5rem;
+    color: #555;
+    font-weight: normal;
+}
+.col-four p{ 
+    font-size: 14px;
+}
+.rating .fa-solid{
+    color:gold ;
+}
+.col-four:hover{
+    transform: translateY(-5px);
+}
+/* -----featured product end ------ */
+
+/* --------offer ------------ */
+
+.offer{
+    background: rgb(234,234,235);
+    background: linear-gradient(90deg, rgba(234,234,235,1) 8%, rgba(104,103,132,1) 81%, rgba(70,69,105,1) 100%);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.oo-edit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.oo-edit-down p{
+    color: #240046;
+    font-weight: 600;
+}
+.img-oo-side{
+    background-image: url('../images/product/exclusive.png');
+    height: 330px;
+    width: 100%;
+    background-size: contain;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+}
+@media only screen and (max-width:988px){
+    .oo-edit{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .oo-edit-up{
+        display: none;
+    }
+    .oo-edit-down{
+        background-image: url('../images/product/exclusive.png');
+        background-position: center;
+        background-size: cover;
+        /* background-attachment: fixed; */
+    }
+    .gg-edit-up p{
+        color: #240046;
+        font-weight: 600;
+    }
+}
+
+/*---------------- offer end -------------- */
+
+/* --------testimonial---------  */
+
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-three{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.testimonial .col-three img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-three:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 27px;
+    color: #7400b8;
+}
+.col-three p{
+    font-size: 15px;
+    margin: 12px 0;
+    color: #777;;
+}
+.testimonial .col-three h3{
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+/* --------testimonial ------------- */
+
+/* -------brands---------- */
+
+.brands{
+    margin: 100px auto;
+}
+.col-five{
+    width: 160px;
+}
+.col-five img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%); /* this makes img grayscale */
+}
+.col-five img:hover{
+    filter: grayscale(0); /* makes hovering effect gray 0 and original color when hovered */
+}
+
+/* --------brands-------- */
+
+
+
+/* ------row-two all products page --------- */
+
+.row-two{
+    justify-content: space-between;
+    /* margin: 100px auto 50px; */
+}
+select{
+    border: 1px solid #7400b8;
+    padding: 5px;
+    background-color: white;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #7400b8;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #7400b8;
+    color: white;
+}
+
+
+/* --------------single product details------------ */
+
+.single-product{
+    margin-top: 20px;
+}
+.single-product .col-two img{
+    padding: 0;
+}
+.single-product .col-two{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    /* margin-top: 20px; */
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    /* border: 1px solid skyblu; */
+    /* padding-bottom: 0.6rem;
+    padding-top: 0.6rem; */
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa-indent{
+    color: #7400b8;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    margin-top: 20px;
+    flex-basis: 24%;
+    cursor: pointer;
+    opacity: 90%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.small-img-col:hover{
+    opacity: 60%;
+}
+
+
+/* ------------cart items-------------- */
+.cart-page{
+    margin: 80px auto;
+    margin-bottom: 10rem;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #7400b8;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}td a{
+    color: #7400b8;
+    font-size: 12px;
+    text-decoration:none ;
+}
+td img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #7400b8;
+    width: 100%;
+    max-width: 405px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+.shop{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+.cen{
+    display: flex;
+    justify-content: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.small-container .cart-info input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* ----------------comment section----------------- */
+main .comment_section{
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
+    margin-bottom: 4rem;
+}
+main .comment_section .legend1{
+    font-size: 2.4rem;
+    color: var(--text-light);
+}
+main .comment_section .comm{
+    font-size: 1.6rem;
+    font-family: Abel;
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+main .comment_section .frmContactSubmit{
+    border: 1px;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    font-family: Abel;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+main .comment_section .frmContactSubmit:hover{
+    cursor: pointer;
+    background-color: var(--text-light);
+}
+@media screen and (max-width:910px){
+    .main .comment_section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    main .comment_section .comm{
+        font-size: 1.3rem;
+    }
+    main .comment_section .legend1{
+        font-size: 2rem;
+    }
+    main .comment_section .frmContactSubmit{
+        font-size: 1.3rem;
+    }
+}
+main .comment_section .comment_people_section .person{
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 1rem;
+    background-color: #f8f8ff;
+}
+main .comment_section .comment_people_section .person_comment{
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 2rem;
+}
+main .comment_section .comment_people_section .person_comment .right_align{
+    text-align: right;
+    padding-right: 2rem;
+    padding: 1rem;
+}
+main .comment_section .comment_people_section .person_comment .right_align a{
+    color: blue;
+}
+
+
+
+/* -----media for less than 600 screen size */
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-two, .col-three, .col-four{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+        
+    }
+    .single-product .col-two{
+        padding: 20px 0;
+    }
+    .single-product .col-two-test{
+        padding-left: 20px;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    .cart-info p{
+        display: none;
+    }
+}
